@@ -9,6 +9,47 @@
 
 ---
 
+## 저장소 클론
+
+팀원 모두 아래 명령으로 이 저장소를 받습니다.
+
+HTTPS:
+
+```bash
+git clone https://github.com/Kanghuijun/infra-incident-lab.git
+cd infra-incident-lab
+```
+
+SSH 키를 쓰는 경우:
+
+```bash
+git clone git@github.com:Kanghuijun/infra-incident-lab.git
+cd infra-incident-lab
+```
+
+이미 클론한 뒤 최신 자료를 받을 때:
+
+```bash
+cd infra-incident-lab
+git pull origin main
+```
+
+클론 후 **자기 담당 폴더로 들어가서** 해당 폴더의 `README.md`부터 실행하세요.
+
+```text
+Docker 담당        →  cd 01-dummy-docker
+Nginx 담당         →  cd 02-dummy-nginx
+AWS 배포 담당      →  cd 03-dummy-aws-deploy
+AWS Network 담당   →  cd 04-dummy-aws-network
+```
+
+2·3·4번은 그 폴더에서 `docker compose up -d --build` 로 시작 상태를 확인할 수 있습니다.
+1번은 Docker가 없으므로 `01-dummy-docker/README.md`의 npm 실행 방법을 따릅니다.
+
+저장소: https://github.com/Kanghuijun/infra-incident-lab
+
+---
+
 ## 누가 어떤 폴더를 쓰나
 
 | 담당 | 폴더 | 시작 상태 | 당신이 할 일 |
