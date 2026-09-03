@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS studyboard
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+CREATE USER IF NOT EXISTS 'study'@'%' IDENTIFIED BY 'study123';
+GRANT ALL PRIVILEGES ON studyboard.* TO 'study'@'%';
+FLUSH PRIVILEGES;
